@@ -1,0 +1,19 @@
+{
+    "name": "api-getway",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "dev": "nodemon index.js",
+      "start": "node index.js"
+    },
+    "dependencies": {
+      "express": "^4.17.1",
+      "http-proxy-middleware": "^1.3.0"
+    },
+    "author": "Elijah Obara <elijahobara357@gmail.com>",
+    "license": "ISC",
+    "devDependencies": {
+      "nodemon": "^2.0.22"
+    }
+  }
