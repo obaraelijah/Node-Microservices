@@ -1,0 +1,38 @@
+version: "3"
+services:
+  chat:
+    build:
+      context: ./chat
+    ports:
+      - 3001:3000
+  feed:
+    build:
+      context: ./feed
+    ports:
+      - 3002:3000
+  video:
+    build:
+      context: ./video
+    ports:
+      - 3003:3000
+  gaming:
+    build:
+      context: ./gaming
+    ports:
+      - 3004:3000
+  marketplace:
+    build:
+      context: ./marketplace
+    ports:
+      - 3005:3000
+  api-gateway:
+    build:
+      context: ./api-gateway
+    ports:
+      - 3000:3000
+    depends_on:
+      - chat
+      - feed
+      - video
+      - gaming
+      - marketplace
